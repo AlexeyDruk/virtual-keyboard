@@ -1,5 +1,8 @@
 let main = document.createElement('div');
 document.body.append(main);
+document.body.prepend(document.createElement('p'));
+document.querySelector("body > p").innerHTML = 'Для корректной работы нужно чтобы выбранный язык и нажатый "CAPSLOCK" были в одинаковом положении, <br> как на виртуальной клавиатуре ,так и на настоящей.Для смены языка используйте leftCtrl+leftShift'
+document.querySelector("body > p").style.color = 'white';
 main.append(document.createElement('textarea'));
 main.append(document.createElement('div'));
 main.append(document.createElement('div'));
