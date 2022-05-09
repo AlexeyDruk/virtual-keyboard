@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: rgb(21, 63, 56);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.main{
+    width: 950px;
+    background-color: rgb(38, 144, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    >div{
+        display: flex;
+        flex-direction: row;
+        >div{
+            height: 50px;
+            width: 50px;
+            box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(8, 8, 8);
+            margin: 6px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+            &:hover{
+                cursor: pointer;
+            }
+            &:active{
+                background-color: aquamarine;
+                border: 2px solid rgb(53, 49, 49);
+            }
+            >p,span{
+                color:white;
+                margin: 0;
+                font-size: large;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+}
+
+textarea{
+    width: 930px;
+    height: 150px;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+.usial_div1{
+    >div:not(div:last-of-type){
+        >p{
+            &:first-of-type{
+                position: absolute;
+                left: 3px;
+                top:2px;
+            }
+        }
+    }
+    >div:last-of-type{
+        width: 127px;
+    }
+}
+.usial_div2{
+    >div:nth-of-type(14){
+        >p:first-of-type{
+            position: absolute;
+            left: 3px;
+            top:2px;
+        }
+    }
+    >div:first-of-type{
+        width: 58px;
+    }
+    >div:last-of-type{
+        width: 57px;
+    }
+}
+.usial_div3{
+    >div{
+       &:first-of-type{
+         width: 127px;
+       }
+       &:last-of-type{
+         width: 112px;
+       } 
+    }
+}
+.usial_div4{
+    >div{
+       &:first-of-type{
+         width: 127px;
+       }
+    }
+}
+.usial_div5{
+    >div{
+       &:first-of-type{
+         width: 80px;
+       }
+       &:nth-of-type(6){
+        width: 80px;
+      }
+       &:nth-of-type(4){
+        width: 377px;
+      }
+    }
+}
+
+.background{
+    background-color: aquamarine;
+    border: 2px solid rgb(53, 49, 49);
+}
+
